@@ -246,6 +246,18 @@
 	.banner .info{
 		padding: 45px 5px 0 5px;
 	}
+	.diagonal-linia:before{
+		content: '';
+		background-color: red;
+		position: absolute;
+		width: 61%;
+		top: 25px;
+		transform: rotate(3deg);
+		height: 2px;
+	}
+	.footer{
+		line-height: 1;
+	}
 }
 @media screen and (max-width: 366px) and (min-width: 320px){
 	
@@ -268,8 +280,16 @@
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-
+@media only screen and (max-width : 320px) {
+	.diagonal-linia:before{
+		content: '';
+		background-color: red;
+		position: absolute;
+		width: 71%;
+		top: 20px;
+		transform: rotate(3deg);
+		height: 2px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -306,8 +326,20 @@
 		content: '';
 		background-color: red;
 		position: absolute;
-		width: 46%;
+		width: 47%;
 		top: 210px;
+		transform: rotate(3deg);
+		height: 2px;
+	}
+}
+/* Extra Extra Large Devices, Wide Screens */
+@media only screen and (min-width : 2560px) {
+	.diagonal-linia:before{
+		content: '';
+		background-color: red;
+		position: absolute;
+		width: 26%;
+		top: 185px;
 		transform: rotate(3deg);
 		height: 2px;
 	}
