@@ -8,12 +8,7 @@
 /* Medium Devices, Desktops */
 
 @media only screen and (max-width : 991px) {
-	.banner{
-		margin-top: 66px;
-	}
-	header nav .container .row .col-md-3{
-		display: none;	
-	}
+	
 	.h1,.h4,.desc{
 		text-align: center;
 	}
@@ -45,6 +40,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	
 	.dest{
 		padding-top: 90px;
 	}
@@ -52,7 +48,7 @@
 		display: none;
 	}
 	.banner .info{
-		background-image: url(../img/girliandy_ukraina_46261726_257887064905208_8645247198225967518_n.jpg);
+		background-image: url(../img/g9.jpg);
 		background-position: center;
 		background-size: cover;
 		height: 400px;
@@ -78,17 +74,12 @@
 	.contact .name, .surname{
 		width: 80%;
 	}
-	nav{
-		padding: 18px 0;
-	}
 	.short-info ul{
 		margin-top: 0;
 		padding-bottom: 50px;
 		margin-left: -20px;
 	}
-	.banner{
-		margin-top: 44px;
-	}
+	
 
 	.main_link li {
 		display: block;
@@ -96,26 +87,8 @@
 
 	}
 	
-	.btn{
-		display: block;
-		background-color: transparent;
-		border:none;
-		font-size:26px;
-		color:#434352;
-		outline:none;
-	}
 
-	.main_link a:hover{
-		border:none;
-		background: none;
-		color: #434352;
-	}
-	nav ul{
-		display: none;
-	}
-	.top_logo li a{
-		display: none;
-	}
+	
 }
 
 
@@ -169,10 +142,13 @@
 		padding-top: 70px;
 	}
 }
+
 @media only screen and (max-width: 768px){
-	.banner .info{
-		padding: 110px;
+
+	nav ul{
+		display: none;
 	}
+
 	.short-info iframe{
 		margin-top: 30px;
 	}
@@ -185,43 +161,108 @@
 		padding: 0 10px 20px 10px;
 	}
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media only screen and (max-width: 1024px){
+	.diagonal-linia:before{
+		content: '';
+		background-color: red;
+		position: absolute;
+		width: 65%;
+		top: 240px;
+		transform: rotate(3deg);
+		height: 2px;
+	}
+	.banner .info{
+		padding: 35px 0;
+	}
+	.banner .info h1{
+		font-size: 24px;
+	}
+	.banner .info .girlianda{
+		font-size: 24px;
+	}
+}
+@media only screen and (max-width: 425px){
 	.dest{
 		padding-top: 65px;
+
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {	
+	.diagonal-linia:before{
+		content: '';
+		background-color: red;
+		position: absolute;
+		width: 29%;
+		top: 23px;
+		transform: rotate(3deg);
+		height: 2px;
 	}
 	.dest a{
+		font-size: 12px;
+		padding: 10px 15px;
+	}
+	.banner .info{
+		padding: 80px 10px 0 10px;
+	}
+	.banner .info h1{
+		font-size: 26px;
+	}
+	.banner .info .btn-order{
+		text-transform: uppercase;
 		font-size: 14px;
 	}
 }
+
 @media screen and (max-width: 425px) and (min-width: 425px) {
 	.banner .info{
-		padding: 80px;
+		
+	}
+	.short-info h1{
+		padding: 20px 10px;
 	}
 }
+
 @media screen and (max-width: 768px) and (min-width: 425px){
-	.img-1, .img-3, .img-4, .img-5, .img-6{
+	.img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7, .img-8{
 		height: 200px;
 	}
 }
 @media screen and (max-width: 425px) and (min-width: 320px){
-	.img-1, .img-3, .img-4, .img-5, .img-6{
+	.img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7, .img-8{
 		height: 150px;
+	}
+	.diagonal-linia:before{
+		content: '';
+		background-color: red;
+		position: absolute;
+		width: 55%;
+		top: 25px;
+		transform: rotate(3deg);
+		height: 2px;
 	}
 }
 @media screen and (max-width: 375px) and (min-width: 320px) {
 	.banner .info{
-		padding: 60px;
+		padding: 45px 5px 0 5px;
 	}
 }
-@media screen and (max-width: 414px) and (min-width: 411px) {
+@media screen and (max-width: 366px) and (min-width: 320px){
+	
+	.banner .info .make-magic{
+		font-size: 14px;
+	}
+	.banner .info h1{
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 428px) and (min-width: 376px) {
 	.banner .info{
-		padding: 70px;
+		padding: 65px 10px 0 10px;
 	}
 }
 @media screen and (max-width: 768px) and (min-width: 768px) {
-	nav ul{
 
-	}
 }
 
 /*==========  Mobile First Method  ==========*/
@@ -249,6 +290,27 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
+	.diagonal-linia:before{
+		content: '';
+		background-color: red;
+		position: absolute;
+		width: 55%;
+		top: 251px;
+		transform: rotate(3deg);
+		height: 2px;
+	}
 }
+/* Extra Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.diagonal-linia:before{
+		content: '';
+		background-color: red;
+		position: absolute;
+		width: 46%;
+		top: 210px;
+		transform: rotate(3deg);
+		height: 2px;
+	}
+}
+
 

@@ -12,11 +12,12 @@ nav {
 	text-align: center;
 	color: #434352;
 	box-shadow: 0 0 5px #000;
-	position: fixed;
-	top: 0;
-	left: 0;
 	width: 100%;
 	z-index: 9999;
+}
+nav h1{
+	text-transform: uppercase;
+	color: #D89B64;
 }
 a {
 	color: #434352;
@@ -28,26 +29,7 @@ ul{
 .top_logo li{
 	list-style-type: none;
 }
-.main_link li{
-	text-decoration: none;
-	list-style-type: none;
-	display: inline-block;
 
-
-}
-.main_link a{
-	padding: 5px 15px;
-	color: #434352;
-	display: block;
-}
-.main_link a:hover {
-	color: #fff;
-	text-decoration: none;
-	background: #434352;
-	padding: 5px 15px;
-	border-bottom: 2px solid #fff;
-
-}
 .btn{
 	display: none;
 }
@@ -61,14 +43,11 @@ ul{
 
 
 }
-.main_link a {
-	margin-top: 5px;
-}
+
 .top_logo img{
 	height: 50px;
 }
 .banner{
-	margin-top: 79px;
 	color: #000;
 	background-color: #ccc;
 }
@@ -77,10 +56,10 @@ ul{
 	width: 100%;
 	height: 400px;
 	text-align: center;
-	padding: 50px ;
+	padding: 60px 15px 0 15px;
 }
 .banner .pic{
-	background-image: url(../img/girliandy_ukraina_46261726_257887064905208_8645247198225967518_n.jpg);
+	background-image: url(../img/g9.jpg);
 	background-position: center;
 	background-size: cover;
 	height: 400px;
@@ -119,6 +98,15 @@ ul{
 }
 .banner .info h1{
 	color: #fff;
+}
+.diagonal-linia:before{
+	content: '';
+	background-color: red;
+	position: absolute;
+	width: 50%;
+	top: 210px;
+	transform: rotate(5deg);
+	height: 2px;
 }
 .btn-order{
 	margin-top: 20px;
@@ -209,6 +197,8 @@ ul{
 	color: #D89B64;
 	padding: 10px;
 	border: 2px solid #D89B64;
+	font-weight: 600;
+	text-transform: uppercase;
 }
 .short-info .more:hover{
 	background-color: #D89B64;
@@ -266,7 +256,7 @@ ul{
 	margin: 5px 0;
 }
 .contact p{
-	text-align: justify;
+	font-weight: 600;
 }
 .fa-map-marker{
 	text-align: left;
@@ -275,10 +265,13 @@ ul{
 #contacts h1{
 	text-align: center;
 	color: #434352;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 #contacts hr{
 	color: #434352;
 }
+
 form{
 	text-align: center;
 }
@@ -300,7 +293,8 @@ form{
 	background-color: #5c5c70;
 	color: #fff;
 	text-align: center;
-	padding: 30px 0;
+	padding: 30px 10px;
+	line-height: 0.8;
 }
 .home-demo .item {
 	background: #ff3f4d;
@@ -322,12 +316,25 @@ form{
 	background-position: center;
 	background-size: cover;
 	width: 100%;
-	padding: 20px 0;
+	padding: 20px 0 55px 0;
 	background-repeat: no-repeat;
 }
 .sales h1{
 	text-transform: uppercase;
 	line-height: 1;
+}
+.sales .get-third{
+	border: 2px solid #fff;
+	padding: 15px 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: all ease-in-out 0.2s;
+}
+.sales .get-third:hover{
+	text-decoration: none;
+	background-color: #fff;
+	color: #DA2020;
 }
 /*section gallery*/
 .gallery-section{
@@ -336,6 +343,16 @@ form{
 }
 .img-1{
 	background-image: url('../img/g1.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+	box-shadow: 0 0 5px #000;
+	position: relative;
+	overflow:hidden;
+}
+.img-2{
+	background-image: url('../img/g2.jpg');
 	background-position: center;
 	background-size: cover;
 	height: 300px;
@@ -384,6 +401,26 @@ form{
 	position: relative;
 	overflow:hidden;
 }
+.img-7{
+	background-image: url('../img/g7.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+	box-shadow: 0 0 5px #000;
+	position: relative;
+	overflow:hidden;
+}
+.img-8{
+	background-image: url('../img/g9.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+	box-shadow: 0 0 5px #000;
+	position: relative;
+	overflow:hidden;
+}
 .dest {
 	position: absolute;
 	top: 100%;
@@ -401,16 +438,23 @@ form{
 	transition: all .5s;
 }
 .dest a{
-	border: 2px solid #D89B64 ;
-	padding: 10px 10px;
+	padding: 15px 25px;
 	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 26px;
 }
 .dest a:hover{
-	background: #D89B64;
+	
 	color: #fff;
 	text-decoration: none;
 }
 .img-1:hover .dest{
+	opacity: 1;
+	top: 0;
+	trasform:scale(1);
+}
+.img-2:hover .dest{
 	opacity: 1;
 	top: 0;
 	trasform:scale(1);
@@ -431,6 +475,16 @@ form{
 	trasform:scale(1);
 }
 .img-6:hover .dest{
+	opacity: 1;
+	top: 0;
+	trasform:scale(1);
+}
+.img-7:hover .dest{
+	opacity: 1;
+	top: 0;
+	trasform:scale(1);
+}
+.img-8:hover .dest{
 	opacity: 1;
 	top: 0;
 	trasform:scale(1);
